@@ -6,7 +6,7 @@ const defaultMigrationOptions = {
   databaseUrl: process.env.DATABASE_URL,
   dir: resolve("infra", "migrations"),
   direction: "up",
-  verbose: true,
+  log: () => {},
   migrationsTable: "pg_migrations",
 };
 
